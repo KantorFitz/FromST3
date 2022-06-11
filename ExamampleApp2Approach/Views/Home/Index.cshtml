@@ -1,8 +1,47 @@
-﻿@{
+﻿@using System.Collections
+@using ExamampleApp2Approach.Entities
+@{ IEnumerable<Hardware>
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<table class="table">
+    <thead class="tab-pane">
+    <tr>
+        <td >
+            Nazwa
+        </td>
+    </tr>  
+    <tr>
+        <td >
+            Rok
+        </td>
+    </tr>  
+    <tr>
+        <td >
+            Cena
+        </td>
+    </tr>
+    
+    <tbody class="tab-content">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+            </tr>     
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+    
+    </thead>
+</table>
