@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DTQzyDRVnBT+LGSx8g1+1LQx2GUHvntlLuiaCSahlbhJFL+1EC51yva9Mu0+PsBEDYYriv2ZR4xrd3/iWzfshw==",
+  "success": true,
+  "projectFilePath": "D:\\Programowanie\\Workspace\\WorkspaceC#\\RiderProjects\\ST3\\ExampleApp\\ExampleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kantor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
