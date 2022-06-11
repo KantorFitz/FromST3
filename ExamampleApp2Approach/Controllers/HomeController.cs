@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ExamampleApp2Approach.Models;
+using ExampleApp.Model;
 
 namespace ExamampleApp2Approach.Controllers
 {
@@ -21,6 +22,13 @@ namespace ExamampleApp2Approach.Controllers
 		public IActionResult Index()
 		{
 			return View();
+		}
+
+		public IActionResult Add()
+		{
+			var result = new HardwareModel();
+			ViewBag.Companies = result.Companies;
+			return View(result);
 		}
 
 		public IActionResult Privacy()
