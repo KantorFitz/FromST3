@@ -29,7 +29,7 @@ namespace ExamampleApp2Approach.Controllers
 
 		public IActionResult Add()
 		{
-			ViewBag.Companies = new HardwareService().GetCompanies();
+			ViewBag.Companies = new HardwareModel().Companies;
 			return View();
 		}
 

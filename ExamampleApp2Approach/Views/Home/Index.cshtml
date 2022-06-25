@@ -1,30 +1,26 @@
-﻿@using System.Collections
-@using ExamampleApp2Approach.Entities
+﻿@using ExamampleApp2Approach.Entities
 @model IEnumerable<Hardware>
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
-@if (Model.Any())
-{
+@* @if (Model.Any()) *@
+@* { *@
     <table class="table">
         <thead class="tab-pane">
         <tr>
             <td >
                 Nazwa
             </td>
-        </tr>
-        <tr>
             <td >
                 Rok
             </td>
-        </tr>
-        <tr>
             <td >
                 Cena
             </td>
         </tr>
+        <tr><a class="btn btn-outline-success float-right" asp-action="Add">Dodaj</a></tr>
 
         <tbody class="tab-content">
         @foreach (var item in Model)
@@ -48,4 +44,4 @@
         </tbody>
 
     </table>
-}
+@* } *@

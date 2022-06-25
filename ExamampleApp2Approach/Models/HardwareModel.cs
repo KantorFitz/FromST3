@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ExamampleApp2Approach.Entities;
+using ExamampleApp2Approach.Service;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ExampleApp.Model
@@ -8,6 +9,8 @@ namespace ExampleApp.Model
 	{
 		public HardwareModel()
 		{
+			var companies = new HardwareService().GetCompanies();
+			Companies = new SelectList(companies, "Id", "Name");
 			var result = new List<Company>(); //change on serv class
 			Companies = new SelectList(result, "Id", "Name");
 		}

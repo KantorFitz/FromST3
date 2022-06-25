@@ -7,6 +7,7 @@ namespace ExamampleApp2Approach.Service
 	public class HardwareService
 	{
 		private static List<Hardware> Hardwares;
+		private static List<Company> Companies;
 		
 		
 		public void Add(Hardware hardware)
@@ -22,14 +23,20 @@ namespace ExamampleApp2Approach.Service
 		
 		public List<Hardware> GetHardware()
 		{
-			var result = new List<Hardware>();
+			var result = Hardwares ?? new List<Hardware>()
+			{
+				new Hardware()
+				{
+					
+				}
+			};
 
 			return result;
 		}
 
 		public List<Company> GetCompanies()
 		{
-			return new List<Company>()
+			var result = Companies ?? new List<Company>()
 			{
 				new Company()
 				{
@@ -49,6 +56,8 @@ namespace ExamampleApp2Approach.Service
 				}
 
 			};
+
+			return result;
 		}
 
 
