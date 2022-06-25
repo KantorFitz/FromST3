@@ -6,10 +6,20 @@ namespace ExamampleApp2Approach.Service
 {
 	public class HardwareService
 	{
+		private static List<Hardware> Hardwares;
+		
+		
 		public void Add(Hardware hardware)
 		{
-		}
+			if (hardware is null)
+			{
+				Hardwares = new List<Hardware>();
+				
+			}
 
+			Hardwares.Add(hardware);
+		}
+		
 		public List<Hardware> GetHardware()
 		{
 			var result = new List<Hardware>();
@@ -19,11 +29,28 @@ namespace ExamampleApp2Approach.Service
 
 		public List<Company> GetCompanies()
 		{
-			var result = new List<Company>();
+			return new List<Company>()
+			{
+				new Company()
+				{
+					Id = 1,
+					Name = "Company 1",
 
-			return result;
+				},
+				new Company()
+				{
+					Id = 2,
+					Name = "Company 2",
+				},
+				new Company()
+				{
+					Id = 3,
+					Name = "Company 3",
+				}
+
+			};
 		}
-		
-		
+
+
 	}
 }
