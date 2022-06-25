@@ -1,47 +1,51 @@
 ﻿@using System.Collections
 @using ExamampleApp2Approach.Entities
-@{ IEnumerable<Hardware>
+@model IEnumerable<Hardware>
+
+@{
     ViewData["Title"] = "Home Page";
 }
-<table class="table">
-    <thead class="tab-pane">
-    <tr>
-        <td >
-            Nazwa
-        </td>
-    </tr>  
-    <tr>
-        <td >
-            Rok
-        </td>
-    </tr>  
-    <tr>
-        <td >
-            Cena
-        </td>
-    </tr>
-    
-    <tbody class="tab-content">
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead class="tab-pane">
+        <tr>
+            <td >
+                Nazwa
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Rok
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Cena
+            </td>
+        </tr>
+
+        <tbody class="tab-content">
         @foreach (var item in Model)
         {
             <tr>
                 <td>
                     @item.Name
                 </td>
-            </tr>     
+            </tr>
             <tr>
                 <td>
-                    @item.Name
+                    @item.Year
                 </td>
             </tr>
             <tr>
                 <td>
-                    @item.Name
+                    @item.Price
                 </td>
             </tr>
-            
         }
-    </tbody>
-    
-    </thead>
-</table>
+        </tbody>
+
+    </table>
+}

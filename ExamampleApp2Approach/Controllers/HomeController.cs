@@ -28,7 +28,7 @@ namespace ExamampleApp2Approach.Controllers
 		{
 			var result = new HardwareModel();
 			ViewBag.Companies = result.Companies;
-			return View(result);
+			return Ok();
 		}
 
 		public IActionResult Privacy()
