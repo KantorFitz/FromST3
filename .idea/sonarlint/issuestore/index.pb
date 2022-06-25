@@ -93,8 +93,6 @@ d
 4ExamampleApp2Approach/Properties/launchSettings.json,4\3\435d95679756f09f0f90f99082411fe5af0cd631
 P
  ExamampleApp2Approach/Startup.cs,4\b\4b07f58e2e61f3652bd27e80e6b02e2f29db1da5
-Z
-*ExamampleApp2Approach/Entities/Hardware.cs,c\f\cf556846a660104f77c389b27e7cd7907088d52d
 _
 /ExamampleApp2Approach/Views/Home/Privacy.cshtml,f\f\fffd2b6a00534760457205b86bf1cd525c55ce00
 _

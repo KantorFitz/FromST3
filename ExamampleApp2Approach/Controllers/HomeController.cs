@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ExamampleApp2Approach.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ExamampleApp2Approach.Models;
+using ExamampleApp2Approach.Service;
 using ExampleApp.Model;
 
 namespace ExamampleApp2Approach.Controllers
@@ -21,14 +23,21 @@ namespace ExamampleApp2Approach.Controllers
 
 		public IActionResult Index()
 		{
-			return View();
+			var result = new HardwareService().GetHardware();
+			return View(result);
 		}
 
 		public IActionResult Add()
 		{
-			var result = new HardwareModel();
-			ViewBag.Companies = result.Companies;
-			return Ok();
+			ViewBag.Companies = new HardwareService().GetCompanies();
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult Add(Hardware hardware)
+		{
+			new HardwareService().Add(hardware);
+			return View();
 		}
 
 		public IActionResult Privacy()
