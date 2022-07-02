@@ -9,14 +9,14 @@ namespace ExamampleApp2Approach.Service
 {
 	public class HardwareDbService
 	{
-		private string connectionString = @"server=localhost;database=examapleApp2Approach;trusted_connection=true";
+		private string connectionString = @"server=theshadowmoses\sqlexpress;database=Hardware;trusted_connection=true";
 
 		public void Add(Hardware hardware)
 		{
 			using (var connection = new SqlConnection(connectionString))
 			{
 				connection.Open();
-				var query = @"insert into Hardware 
+				const string command = @"insert into Hardware 
 								([Name], [Description], [Year], [NumberOfItems], [Price])
     							values
 								(@Name, @Description, @Year, @NumberOfItems, @Price)";
@@ -30,7 +30,7 @@ namespace ExamampleApp2Approach.Service
 				
 			
 				
-				var result = connection.Execute(query, db);
+				var result = connection.Execute(command, db);
 			}
 		}
 
@@ -41,22 +41,9 @@ namespace ExamampleApp2Approach.Service
 				connection.Open();
 				var result = connection.Query<Hardware>("Select * From Hardware").ToList();
 
-
-				while (reader.Read())
-				{
-					var hardware = new Hardware();
-					hardware.Id = reader.GetInt32(0);
-					hardware.Name = reader.GetString(1);
-					hardware.Description = reader.GetString(2);
-					hardware.Price = reader.GetDecimal(3);
-					hardware.Category = reader.GetString(4);
-					result.Add(hardware);
-				}
-
+				
+				
 				return result;
-			}
-
-			{
 			}
 		}
 	}

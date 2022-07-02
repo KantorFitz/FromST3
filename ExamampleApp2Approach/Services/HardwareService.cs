@@ -6,28 +6,29 @@ namespace ExamampleApp2Approach.Service
 {
 	public class HardwareService
 	{
-		private static List<Hardware> Hardwares;
-		private static List<Company> Companies;
+		private static List<Hardware> Hardwares { get; set; }
+		private static List<Company> Companies { get; set; }
 		
 		
 		public void Add(Hardware hardware)
 		{
-			if (hardware is null)
-			{
-				Hardwares = new List<Hardware>();
-				
-			}
-
+			Hardwares ??= new List<Hardware>();
 			Hardwares.Add(hardware);
 		}
 		
 		public List<Hardware> GetHardware()
 		{
-			var result = Hardwares ?? new List<Hardware>()
+			var result = Hardwares ?? new List<Hardware>
 			{
-				new Hardware()
+				new()
 				{
-					
+					Description = "sdfsdf",
+					Id = 1,
+					Name = "NameHardware",
+					Price = 1271623,
+					Year = "2020",
+					CompanyId = 2,
+					NumberOfItems = "10"
 				}
 			};
 

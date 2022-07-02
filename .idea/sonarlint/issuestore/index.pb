@@ -2,11 +2,7 @@
 L
 ExampleApp/ExampleApp.csproj,3\1\31eec105ff23f07de57721395fa6f8ea9ac92177
 b
-2ExamampleApp2Approach/ExamampleApp2Approach.csproj,1\1\119e98d633f6ccc5c177e79d64fd8cf313173b9b
-b
 2ExamampleApp2Approach/appsettings.Development.json,b\c\bc8e20adf863821a983ec37779fe4eb10da2c3d6
-P
- ExamampleApp2Approach/Program.cs,0\4\04a48359af9040f18b8666e324053ea8defef39c
 V
 &ExamampleApp2Approach/appsettings.json,b\e\bea8932259cea2e654131714cf6ce8465c5c52e8
 ]
@@ -47,8 +43,6 @@ w
 GExamampleApp2Approach/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js,0\7\079168e8c82955fade63f5eecf62a3f3d078ade4
 z
 JExamampleApp2Approach/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map,9\0\90902b7c921fd2e4700808e2281718a528a9b762
-7
-ST3.sln,6\c\6cda9b205b6f8baac95909a9d33247febfcb2925
 {
 KExamampleApp2Approach/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map,2\4\24a317c0ff85b87cd3e3d8abdc0155b5ccef83f6
 Å
@@ -85,14 +79,8 @@ KExamampleApp2Approach/wwwroot/lib/jquery-validation/dist/jquery.validate.js,3\
 bExamampleApp2Approach/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js,a\d\ad95f8e1e3efbb7e527dec21e89d374ace361429
 {
 KExamampleApp2Approach/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt,1\0\10196148768db5c72fdacb3fdfebe35757f32f69
-^
-.ExamampleApp2Approach/Models/ErrorViewModel.cs,d\c\dceb3ba1668f0764e6fe4370fe5355f567607dbb
-Y
-)ExamampleApp2Approach/Entities/Company.cs,a\a\aadd8edd3dc7f2713bcc77697560dd44a29d2845
 d
 4ExamampleApp2Approach/Properties/launchSettings.json,4\3\435d95679756f09f0f90f99082411fe5af0cd631
-P
- ExamampleApp2Approach/Startup.cs,4\b\4b07f58e2e61f3652bd27e80e6b02e2f29db1da5
 _
 /ExamampleApp2Approach/Views/Home/Privacy.cshtml,f\f\fffd2b6a00534760457205b86bf1cd525c55ce00
 _
@@ -101,5 +89,7 @@ s
 CExamampleApp2Approach/Views/Shared/_ValidationScriptsPartial.cshtml,5\d\5dffcc5a57ae4a7167b841a714f3ebda5e8da933
 a
 1ExamampleApp2Approach/Views/Shared/_Layout.cshtml,1\a\1a6a21e657a839e4ffb8767b562abb2d7a95a3a7
-c
-3ExamampleApp2Approach/Views/NowyWidok/Nwidok.cshtml,4\3\433c7ea112c2d9dee7210015fb38867e8bf94893
+?
+ST3 Zajecia.sln,f\1\f1d2a474c56f74e2fdbaa80a7074ceb027258779
+b
+2ExamampleApp2Approach/ExamampleApp2Approach.csproj,1\1\119e98d633f6ccc5c177e79d64fd8cf313173b9b
